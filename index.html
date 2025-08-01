@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Meta tags for SEO and social media -->
+  <meta name="description" content="MultiEditor is a dual-branch diffusion framework for controllable multimodal object editing in autonomous driving scenarios using 3D Gaussian Splatting priors.">
+  <meta name="keywords" content="Multimodal Editing, Diffusion Model, 3D Gaussian Splatting, Autonomous Driving, LiDAR, Image Editing">
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="MultiEditor: Controllable Multimodal Object Editing for Driving Scenarios"/>
+  <meta property="og:description" content="A diffusion-based framework using 3D Gaussian Splatting for editing images and LiDAR data in autonomous driving."/>
+  <meta property="og:url" content="https://yourprojectsite.com"/>
+  <meta property="og:image" content="static/images/your_banner_image.png"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- Twitter -->
+  <meta name="twitter:title" content="MultiEditor: Controllable Multimodal Object Editing for Driving Scenarios">
+  <meta name="twitter:description" content="Edit image and LiDAR data with 3D Gaussian priors for autonomous driving scenarios.">
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Academic Project Page</title>
+  <title>MultiEditor | Controllable Multimodal Editing</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
 
+  <!-- Fonts and CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
+  <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -44,210 +42,175 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
 <body>
-
-
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">MultiEditor: Controllable Multimodal Object Editing for Driving Scenarios Using 3D Gaussian Splatting Priors</h1>
+            <h1 class="title is-1 publication-title">
+              MultiEditor: Controllable Multimodal Object Editing for Driving Scenarios Using 3D Gaussian Splatting Priors
+            </h1>
+
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=kRKEO4kAAAAJ&hl=zh-CN" target="_blank">Shouyi Lu</a><sup>1</sup>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?hl=zh-CN&user=wHZ5H7sAAAAJ" target="_blank">Zihan Lin</a><sup>2*</sup>,</span>
+              <span class="author-block"><a target="_blank">Chao Lu</a><sup>2</sup>,</span>
+              <span class="author-block"><a target="_blank">Huanran Wang</a><sup>2</sup>,</span>
+              <span class="author-block"><a target="_blank">Guirong Zhuo</a><sup>1†</sup>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=gZfyMFwAAAAJ&hl=zh-CN" target="_blank">Lianqing Zheng</a><sup>1</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Shouyi Lu</a><sup>1</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zihan Lin</a><sup>2*</sup>,</span>
-                    <span class="author-block">
-                      <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Chao Lu</a><sup>2</sup>,</span>
-                        <span class="author-block">
-                          <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Huanran Wang</a><sup>2</sup>,</span>
-                            <span class="author-block">
-                              <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Guirong Zhuo</a><sup>1†</sup>,</span>
-                                <span class="author-block">
-                                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Lianqing Zheng</a><sup>1
-                  </span>
-                  </div>
+                <sup>1</sup>School of Automotive Studies, Tongji University<br>
+                <sup>2</sup>Mach Drive
+              </span>
+              <br>
+              <small><sup>*</sup>Project leader <sup>†</sup>Corresponding author</small>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block"> <sup>1</sup>School of Automotive Studies, Tongji University<br> <sup>2</sup>Mach Drive </span>
-                    <span class="eql-cntrb">
-                      <small><br><sup>*</sup>Project leader <sup>†</sup>Corresponding author</small>
-                    </span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2507.21872.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
+            <!-- Paper Links -->
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2507.21872.pdf" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/YOUR_REPO_HERE" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code - Coming Soon...</span>
                   </a>
                 </span>
-
-                <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2507.21872" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="https://arxiv.org/abs/2507.21872" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/fig8.png" alt="Figure 8" style="width: 100%;">
-      <h2 class="subtitle has-text-centered">
-        MultiEditor demonstrates high controllability and flexible editing of complex-shaped vehicles. A roller vehicle is inserted into the scene at 45° intervals, showcasing consistent and precise object editing performance.</h2>
+  <!-- Teaser -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/fig8.png" alt="Figure 8" style="width: 100%;">
+        <h2 class="subtitle has-text-centered">
+          MultiEditor demonstrates high controllability and flexible editing of complex-shaped vehicles. A roller vehicle is inserted into the scene at 45° intervals, showcasing consistent and precise object editing performance.
+        </h2>
+      </div>
     </div>
-  </div>
-</section>
-<!-- End teaser video -->
+  </section>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Autonomous driving systems rely heavily on multimodal perception data to understand complex environments. However, the long-tailed distribution of real-world data hinders generalization, especially for rare but safety-critical vehicle categories. To address this challenge, we propose MultiEditor, a dual-branch latent diffusion framework designed to edit images and LiDAR point clouds in driving scenarios jointly. At the core of our approach is introducing 3D Gaussian Splatting (3DGS) as a structural and appearance prior for target objects. Leveraging this prior, we design a multi-level appearance control mechanism—comprising pixel-level pasting, semantic-level guidance, and multi-branch refinement—to achieve high-fidelity reconstruction across modalities. We further propose a depth-guided deformable cross-modality condition module that adaptively enables mutual guidance between modalities using 3DGS-rendered depth, significantly enhancing cross-modality consistency. Extensive experiments demonstrate that MultiEditor achieves superior performance in visual and geometric fidelity, editing controllability, and cross-modality consistency. Furthermore, generating rare-category vehicle data with MultiEditor substantially enhances the detection accuracy of perception models on underrepresented classes.
-          </p>
+  <!-- Abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Autonomous driving systems rely heavily on multimodal perception data to understand complex environments. However, the long-tailed distribution of real-world data hinders generalization, especially for rare but safety-critical vehicle categories. To address this challenge, we propose MultiEditor, a dual-branch latent diffusion framework designed to edit images and LiDAR point clouds in driving scenarios jointly. At the core of our approach is introducing 3D Gaussian Splatting (3DGS) as a structural and appearance prior for target objects. Leveraging this prior, we design a multi-level appearance control mechanism—comprising pixel-level pasting, semantic-level guidance, and multi-branch refinement—to achieve high-fidelity reconstruction across modalities. We further propose a depth-guided deformable cross-modality condition module that adaptively enables mutual guidance between modalities using 3DGS-rendered depth, significantly enhancing cross-modality consistency. Extensive experiments demonstrate that MultiEditor achieves superior performance in visual and geometric fidelity, editing controllability, and cross-modality consistency. Furthermore, generating rare-category vehicle data with MultiEditor substantially enhances the detection accuracy of perception models on underrepresented classes.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <h2 class="title is-3 has-text-centered">The Proposed Method</h2>
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/fig2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Overview of the proposed MultiEditor framework. A dual-branch diffusion model is employed to edit multimodal data. Each branch incorporates a multi-level appearance control mechanism for fidelity, while a cross-modality condition module enhances consistency between modalities.
-        </h2>
+  <!-- Image Carousels -->
+  <section class="hero is-small">
+    <h2 class="title is-3 has-text-centered">The Proposed Method</h2>
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/fig2.png" alt="Framework Overview" />
+            <h2 class="subtitle has-text-centered">
+              Overview of the proposed MultiEditor framework. A dual-branch diffusion model is employed to edit multimodal data. Each branch incorporates a multi-level appearance control mechanism for fidelity, while a cross-modality condition module enhances consistency between modalities.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/fig3.png" alt="Cross-modality Condition Module" style="display: block; margin: 0 auto;" />
+            <h2 class="subtitle has-text-centered">
+              Cross-modality condition module. We perform bidirectional conditioning between LiDAR and camera modalities on latent representations, guided by depth priors and spatial transformations.
+            </h2>
+          </div>
+        </div>
       </div>
-      <div class="item">
-  <!-- 第二张图像居中显示 -->
-  <img src="static/images/fig3.png" alt="MY ALT TEXT" style="display: block; margin: 0 auto;"/>
-  <h2 class="subtitle has-text-centered">
-    Cross-modality condition module. We perform bidirectional conditioning between LiDAR and camera modalities on latent representations, guided by depth priors and spatial transformations.
-  </h2>
-</div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+    </div>
+  </section>
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <h2 class="title is-3 has-text-centered">Qualitative Visualization</h2>
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/fig4.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Editing results on regular vehicles. MultiEditor achieves better appearance and geometric fidelity than the baseline.</h2>
+  <section class="hero is-small">
+    <h2 class="title is-3 has-text-centered">Qualitative Visualization</h2>
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/fig4.png" alt="Regular Vehicle Editing Results" />
+            <h2 class="subtitle has-text-centered">
+              Editing results on regular vehicles. MultiEditor achieves better appearance and geometric fidelity than the baseline.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/fig5.png" alt="Atypical Vehicle Editing Results" style="display: block; margin: 0 auto;" />
+            <h2 class="subtitle has-text-centered">
+              Editing results on atypical vehicles.
+            </h2>
+          </div>
+        </div>
       </div>
-      <div class="item">
-  <!-- 第二张图像居中显示 -->
-  <img src="static/images/fig5.png" alt="MY ALT TEXT" style="display: block; margin: 0 auto;"/>
-  <h2 class="subtitle has-text-centered">
-    Editing results on atypical vehicles.</h2>
-</div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+    </div>
+  </section>
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <h2 class="title is-3 has-text-centered">Downstream Task Benefits</h2>
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/fig10.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Multimodal data generation for downstream tasks. We insert van-class vehicles at varying poses and distances into image and point cloud modalities. This enhances the diversity of training data and improves the performance of 2D and 3D detectors in recognizing van-class objects. </h2>
+  <section class="hero is-small">
+    <h2 class="title is-3 has-text-centered">Downstream Task Benefits</h2>
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/fig10.png" alt="Data Augmentation for Detection" />
+            <h2 class="subtitle has-text-centered">
+              Multimodal data generation for downstream tasks. We insert van-class vehicles at varying poses and distances into image and point cloud modalities. This enhances the diversity of training data and improves the performance of 2D and 3D detectors in recognizing van-class objects.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/fig11.png" alt="Detection Performance" style="display: block; margin: 0 auto;" />
+            <h2 class="subtitle has-text-centered">
+              Detection performance on van-class objects using 2D and 3D detection models trained with real and augmented (real + generated) data.
+            </h2>
+          </div>
+        </div>
       </div>
-      <div class="item">
-  <!-- 第二张图像居中显示 -->
-  <img src="static/images/fig11.png" alt="MY ALT TEXT" style="display: block; margin: 0 auto;"/>
-  <h2 class="subtitle has-text-centered">
-    Detection performance on van-class objects using 2D and 3D detection models trained with real and augmented (real + generated) data.
-  </h2>
-</div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+    </div>
+  </section>
 
-<!--BibTex citation -->
+  <!-- BibTeX -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@misc{lu2025multieditorcontrollablemultimodalobject,
-      title={MultiEditor: Controllable Multimodal Object Editing for Driving Scenarios Using 3D Gaussian Splatting Priors}, 
-      author={Shouyi Lu and Zihan Lin and Chao Lu and Huanran Wang and Guirong Zhuo and Lianqing Zheng},
-      year={2025},
-      eprint={2507.21872},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2507.21872}, 
+  title={MultiEditor: Controllable Multimodal Object Editing for Driving Scenarios Using 3D Gaussian Splatting Priors},
+  author={Shouyi Lu and Zihan Lin and Chao Lu and Huanran Wang and Guirong Zhuo and Lianqing Zheng},
+  year={2025},
+  eprint={2507.21872},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2507.21872}
 }</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
-
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </section>
+</body>
+</html>
